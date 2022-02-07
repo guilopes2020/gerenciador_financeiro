@@ -36,19 +36,15 @@ class CreateAllTables extends Migration
         Schema::create('outgoings', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_user');
-            $table->integer('category');
+            $table->string('category');
             $table->dateTime('created');
             $table->string('description', 191);
+            $table->tinyInteger('paga')->default(0);
             $table->float('value');
             $table->dateTime('vencimento');
             $table->timestamps();
         });
 
-        Schema::create('categories', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('description', 191);
-            $table->timestamps();
-        });
     }
 
     /**
@@ -61,7 +57,6 @@ class CreateAllTables extends Migration
         Schema::dropIfExists('users');
         Schema::dropIfExists('entries');
         Schema::dropIfExists('outgoings');
-        Schema::dropIfExists('categories');
         
     }
 }
