@@ -76,7 +76,7 @@
                     </tbody>
                 </table>
                 @else
-                    <h4 style="text-align: center; color: #ccc; ">não foi encontrado nada referente a <strong>{{$search}}</strong></h4>
+                    <h4 style="text-align: center; color: #ccc; ">não foi encontrado nada referente a <strong>{{$search['category']}}</strong></h4>
             @endif
         </div>
     </div>
