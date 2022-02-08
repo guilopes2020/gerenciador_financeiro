@@ -38,6 +38,7 @@
                         <option value="alugueis">alugueis</option>
                         <option value="freelas">freeelas</option>
                         <option value="outros">outros</option>
+                        <option value="trabalho">trabalho</option>
                     </select>
                 </div>
             </div>

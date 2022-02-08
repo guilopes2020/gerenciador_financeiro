@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\User;
+use App\Models\Outgoing;
 
-class UserSeeder extends Seeder
+class OutGoingSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(10)->create();
+        //Outgoing::factory(100)->create();
     }
 }

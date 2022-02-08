@@ -35,9 +35,10 @@
                 <div class="controls">
                     <select name="category" id="category">
                         <option value="{{$outgoing->category}}" selected>{{$outgoing->category}}</option>
-                        <option value="alugueis">alugueis</option>
-                        <option value="freelas">freeelas</option>
-                        <option value="outros">outros</option>
+                        <option value="casa">casa</option>
+                        <option value="viagens">viagens</option>
+                        <option value="superfulos">superfulos</option>
+                        <option value="carro">carro</option>
                     </select>
                 </div>
             </div>

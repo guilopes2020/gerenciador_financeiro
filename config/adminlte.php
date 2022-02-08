@@ -252,11 +252,6 @@ return [
             'url'  => 'painel/profile',
             'icon' => 'fas fa-fw fa-user',
         ],
-        [
-            'text' => 'Sair',
-            'url' => 'painel/logout',
-            'icon' => 'fa fa-fw fa-power-off text-red',
-        ],
         
         
         

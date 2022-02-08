@@ -14,7 +14,7 @@ class CreateAllTables extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('name', 100);
             $table->string('email', 100)->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -24,8 +24,9 @@ class CreateAllTables extends Migration
         });
 
         Schema::create('entries', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('id_user');
+            $table->id();
+            $table->unsignedBigInteger('id_user');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->string('category');
             $table->dateTime('created');
             $table->string('description', 191);
@@ -34,8 +35,9 @@ class CreateAllTables extends Migration
         });
 
         Schema::create('outgoings', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('id_user');
+            $table->id();
+            $table->unsignedBigInteger('id_user');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->string('category');
             $table->dateTime('created');
             $table->string('description', 191);

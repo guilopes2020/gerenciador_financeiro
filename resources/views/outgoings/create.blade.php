@@ -32,10 +32,10 @@
                     <label class="col-sm-2 control-label">Categoria</label>
                     <div class="controls">
                         <select name="category" id="category">
-                            <option value="trabalho" selected>casa</option>
-                            <option value="alugueis">viagens</option>
-                            <option value="freelas">superfulos</option>
-                            <option value="outros">carro</option>
+                            <option value="casa" selected>casa</option>
+                            <option value="viagens">viagens</option>
+                            <option value="superfulos">superfulos</option>
+                            <option value="carro">carro</option>
                         </select>
                     </div>
                 </div>
